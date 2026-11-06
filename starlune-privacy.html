@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="starlune-icon.png">
+  <title>Starlune Privacy Policy</title>
+  <style>
+    :root { --paper:#f7f2e7; --card:#fffdf8; --ink:#151c25; --soft:#4b5259; --muted:#777b7d; --coral:#d94d3a; --teal:#1f7770; --line:rgba(21,28,37,.12); }
+    @media (prefers-color-scheme: dark) { :root { --paper:#0d1218; --card:#151b22; --ink:#e9e2d4; --soft:#c1beb6; --muted:#999991; --line:rgba(233,226,212,.12); } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:ui-serif,Georgia,"Noto Serif SC",serif; line-height:1.72; }
+    header, main, footer { width:min(760px,calc(100% - 40px)); margin:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; padding:28px 0 20px; border-bottom:1px solid var(--line); }
+    .brand { color:var(--coral); font:700 12px/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:.2em; text-decoration:none; }
+    .toggle { display:flex; gap:5px; padding:4px; border:1px solid var(--line); border-radius:999px; }
+    button { border:0; border-radius:999px; padding:7px 11px; color:var(--soft); background:transparent; font:600 11px/1 ui-sans-serif,system-ui,sans-serif; cursor:pointer; }
+    button.active { color:var(--paper); background:var(--ink); }
+    main { padding:48px 0 64px; }
+    h1 { margin:0 0 10px; font-size:clamp(38px,7vw,58px); line-height:1.02; font-weight:500; letter-spacing:-.02em; }
+    h2 { margin:38px 0 10px; font-size:23px; line-height:1.25; font-weight:600; }
+    h3 { margin:22px 0 8px; font-size:16px; font-weight:650; }
+    p, li { color:var(--soft); font-size:16px; }
+    ul { padding-left:22px; }
+    a { color:var(--teal); }
+    .lede { max-width:640px; color:var(--soft); font-size:19px; }
+    .meta { margin:16px 0 30px; color:var(--muted); font:500 11px/1.5 ui-sans-serif,system-ui,sans-serif; letter-spacing:.05em; text-transform:uppercase; }
+    .summary { padding:22px 24px; background:var(--card); border:1px solid var(--line); border-radius:8px; }
+    .summary p { margin:0; }
+    .notice { border-left:3px solid var(--coral); padding:4px 0 4px 18px; margin:28px 0; }
+    [data-lang] { display:none; }
+    [data-lang].visible { display:block; }
+    footer { padding:24px 0 50px; border-top:1px solid var(--line); color:var(--muted); font:12px/1.7 ui-sans-serif,system-ui,sans-serif; }
+    .footer-links { display:flex; flex-wrap:wrap; gap:16px; margin-top:8px; }
+    @media (max-width:520px) { header { padding-top:20px; } main { padding-top:34px; } p,li { font-size:15px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="starlune.html">STARLUNE</a>
+    <div class="toggle" aria-label="Language">
+      <button id="enButton" class="active" type="button">EN</button>
+      <button id="zhButton" type="button">中文</button>
+    </div>
+  </header>
+
+  <main>
+    <section data-lang="en" class="visible">
+      <h1>Privacy, without small print.</h1>
+      <p class="lede">Starlune works without an account. Your local preferences and saved readings stay on your device. AI content is sent only after a specific disclosure and your explicit choice.</p>
+      <p class="meta">Effective November 6, 2026 · Version 1.0</p>
+
+      <div class="summary">
+        <p><strong>At a glance:</strong> no account, no advertising tracking, no data broker sharing. The Oracle sends your selected sign, topic, question, language, and a short daily chart summary to our AI gateway and its model provider only after you agree.</p>
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>Starlune is operated by the independent Starlune app team. For privacy questions or requests, contact <a href="mailto:kaimen2026@163.com">kaimen2026@163.com</a>.</p>
+
+      <h2>2. What stays on your device</h2>
+      <p>Starlune stores your selected zodiac sign, language, appearance, reminder preference, consent version, daily AI usage count, streak, and saved readings locally using Apple's app preference storage. We do not create a Starlune account or upload this local library.</p>
+      <p>You can delete saved readings in the app. Uninstalling the app removes local app data, subject to Apple's device backup behavior.</p>
+
+      <h2>3. AI requests and consent</h2>
+      <p>Before the first Oracle request, the app displays exactly what will be sent, who receives it, why it is needed, where it may be processed, and what you should not submit. No AI content is sent unless you actively confirm that disclosure. The request service also checks consent independently.</p>
+      <h3>Fields sent</h3>
+      <ul>
+        <li>Your selected zodiac sign</li>
+        <li>The topic and question you choose or type</li>
+        <li>Your selected app language</li>
+        <li>A short summary of the locally generated daily chart, such as theme, scores, moon phase, and best time window</li>
+      </ul>
+      <h3>Recipients and processing</h3>
+      <p>Requests are sent over HTTPS to the Starlune AI gateway at <strong>api.xiumen.top</strong>, hosted in Hangzhou, China. The gateway forwards the request to the third-party AI model provider it uses. Requests may be processed in other regions, including China. The operator may change model providers; material changes require a new consent version and updated disclosures.</p>
+      <h3>Purpose</h3>
+      <p>The content is used only to generate the reflective astrology reading you requested. We do not use it for advertising or to create an account-linked profile.</p>
+      <h3>Retention</h3>
+      <p>AI requests may be processed, logged, or retained by the gateway and model provider for service operation, security, abuse prevention, and rate limiting under their applicable terms. We do not maintain an account-linked AI reading history.</p>
+      <div class="notice"><p>Do not submit names, birth dates, addresses, phone numbers, passwords, payment details, medical records, or other sensitive personal information to the Oracle.</p></div>
+      <h3>Withdrawing consent</h3>
+      <p>You can withdraw AI consent at <strong>You &gt; AI data consent</strong>. Withdrawal stops future AI requests but does not delete readings already saved on your device. You may delete those readings separately.</p>
+
+      <h2>4. Purchases</h2>
+      <p>Starlune Plus purchases are processed by Apple through the App Store. Starlune receives verified subscription entitlement information on the device. We do not receive your payment card number or Apple Account password. Apple's privacy policy applies to its purchase processing.</p>
+
+      <h2>5. Data we do not collect</h2>
+      <p>Starlune does not require or request your account identity, precise location, contacts, photos, health records, advertising identifier, browsing history, or payment card details. We do not use third-party advertising SDKs or sell personal information.</p>
+
+      <h2>6. Security and international transfers</h2>
+      <p>Network requests use HTTPS with system certificate validation. The app's gateway credential is app-specific and server-revocable, but it is not a user identity credential. If you use AI features, your request content may be transferred to and processed in countries other than your own as described above.</p>
+
+      <h2>7. Children</h2>
+      <p>Starlune is not directed to children under 13. Do not use the Oracle to submit information about a child.</p>
+
+      <h2>8. Your choices and rights</h2>
+      <p>You can change your sign or language, disable reminders, withdraw AI consent, delete saved readings, and manage or cancel subscriptions. Depending on your location, you may also have rights to access, correct, delete, or object to processing. Contact us to make a request. We may need enough information to identify the relevant request without asking you to reveal sensitive data.</p>
+
+      <h2>9. Changes</h2>
+      <p>We may update this policy when the app or data flow changes. Material AI data-flow changes will require a new in-app consent version. The effective date at the top will be updated.</p>
+
+      <h2>10. Contact</h2>
+      <p>Email <a href="mailto:kaimen2026@163.com">kaimen2026@163.com</a>. Please include “Starlune privacy” in the subject line.</p>
+    </section>
+
+    <section data-lang="zh">
+      <h1>隐私，不需要藏在细则里。</h1>
+      <p class="lede">星澜无需账号即可使用。你的本地偏好与收藏保存在设备中。只有在逐项说明并获得你的主动同意后，星澜才会发送 AI 内容。</p>
+      <p class="meta">生效日期：2026 年 11 月 6 日 · 版本 1.0</p>
+
+      <div class="summary"><p><strong>简要说明：</strong>星澜不需要账号，不进行广告追踪，不出售个人数据。只有在你同意后，星语才会把所选星座、主题、问题、语言和今日本地星图摘要发送至 AI 网关及其模型服务商。</p></div>
+
+      <h2>1. 我们是谁</h2>
+      <p>星澜由独立的 Starlune 应用团队运营。隐私问题或权利请求请联系 <a href="mailto:kaimen2026@163.com">kaimen2026@163.com</a>。</p>
+
+      <h2>2. 仅保存在设备上的数据</h2>
+      <p>星澜使用 Apple 的应用偏好存储在本地保存：所选星座、语言、外观、提醒偏好、授权版本、每日 AI 使用次数、连续阅读天数和收藏解读。星澜不会创建用户账号，也不会上传这份本地收藏库。</p>
+      <p>你可以在应用内删除收藏解读。卸载应用会移除本地应用数据，但可能受 Apple 设备备份机制影响。</p>
+
+      <h2>3. AI 请求与授权</h2>
+      <p>首次使用星语前，应用会明确展示将发送的数据、接收方、用途、可能处理地区以及不应提交的信息。只有在你主动确认后，AI 内容才会发送。请求服务层也会独立校验授权状态。</p>
+      <h3>发送的字段</h3>
+      <ul>
+        <li>你所选的星座</li>
+        <li>你选择或输入的主题与问题</li>
+        <li>你所选的应用语言</li>
+        <li>本地生成的今日星图简短摘要，例如主题、分数、月相和高效时段</li>
+      </ul>
+      <h3>接收方与处理地区</h3>
+      <p>请求通过 HTTPS 发送至位于中国杭州的 Starlune AI 网关 <strong>api.xiumen.top</strong>，再转发给网关所使用的第三方 AI 模型服务商。请求可能在其他地区（包括中国）处理。运营方可能更换模型供应商；发生实质性变化时，需要更新披露并重新取得同意。</p>
+      <h3>用途</h3>
+      <p>仅用于生成你所请求的反思式占星解读。我们不会将其用于广告，也不会建立与账号关联的画像。</p>
+      <h3>保留</h3>
+      <p>AI 请求可能由网关与模型服务商为服务运行、安全、防滥用和限流目的进行处理、记录或保留，具体受其适用条款约束。星澜不维护与账号关联的 AI 解读历史。</p>
+      <div class="notice"><p>请勿向星语提交姓名、出生日期、地址、电话号码、密码、支付信息、医疗记录或其他敏感个人信息。</p></div>
+      <h3>撤回授权</h3>
+      <p>可在 <strong>我的 &gt; AI 数据授权</strong> 中撤回。撤回后将停止未来的 AI 请求，但不会自动删除设备上已保存的解读；你可以单独删除收藏。</p>
+
+      <h2>4. 购买</h2>
+      <p>Starlune Plus 由 Apple 通过 App Store 处理。星澜在设备上读取经系统验证的订阅权益，不会获取你的支付卡号或 Apple 账户密码。Apple 的隐私政策适用于其支付处理。</p>
+
+      <h2>5. 不收集的数据</h2>
+      <p>星澜不要求或请求账号身份、精确定位、通讯录、照片、健康记录、广告标识符、浏览历史或支付卡信息。应用不使用第三方广告 SDK，也不会出售个人信息。</p>
+
+      <h2>6. 安全与跨境处理</h2>
+      <p>网络请求使用 HTTPS 和系统证书校验。应用的网关凭证仅用于本 App，可由服务器单独撤销，但不代表用户身份。使用 AI 功能时，请求内容可能按上述说明传输至你所在国家或地区以外的地点处理。</p>
+
+      <h2>7. 儿童</h2>
+      <p>星澜并非面向 13 岁以下儿童。请勿通过星语提交儿童信息。</p>
+
+      <h2>8. 你的选择与权利</h2>
+      <p>你可以更改星座或语言、关闭提醒、撤回 AI 授权、删除收藏，以及管理或取消订阅。根据所在地法律，你可能还享有访问、更正、删除或反对处理等权利。请联系我们提出请求；我们可能会要求必要信息以定位对应请求，但不会要求你提供敏感数据。</p>
+
+      <h2>9. 政策变更</h2>
+      <p>当应用或数据流发生变化时，我们可能更新本政策。AI 数据流发生实质性变化时，应用会更新授权版本并重新征求同意。生效日期会同步更新。</p>
+
+      <h2>10. 联系方式</h2>
+      <p>邮箱：<a href="mailto:kaimen2026@163.com">kaimen2026@163.com</a>。请在邮件主题中注明“Starlune 隐私”。</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>Starlune · Daily zodiac, reframed.</div>
+    <div class="footer-links"><a href="starlune-support.html">Support</a><a href="starlune.html">Starlune</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></div>
+  </footer>
+
+  <script>
+    const en = document.querySelector('[data-lang="en"]');
+    const zh = document.querySelector('[data-lang="zh"]');
+    const enButton = document.getElementById('enButton');
+    const zhButton = document.getElementById('zhButton');
+    function show(lang) {
+      const chinese = lang === 'zh';
+      en.classList.toggle('visible', !chinese);
+      zh.classList.toggle('visible', chinese);
+      enButton.classList.toggle('active', !chinese);
+      zhButton.classList.toggle('active', chinese);
+      document.documentElement.lang = chinese ? 'zh-Hans' : 'en';
+    }
+    enButton.addEventListener('click', () => show('en'));
+    zhButton.addEventListener('click', () => show('zh'));
+    if ((navigator.language || '').toLowerCase().startsWith('zh')) show('zh');
+  </script>
+</body>
+</html>
+
