@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="starlune-icon.png">
+  <title>Starlune Support</title>
+  <style>
+    :root { --paper:#f7f2e7; --card:#fffdf8; --ink:#151c25; --soft:#4b5259; --muted:#777b7d; --coral:#d94d3a; --teal:#1f7770; --line:rgba(21,28,37,.12); }
+    @media (prefers-color-scheme: dark) { :root { --paper:#0d1218; --card:#151b22; --ink:#e9e2d4; --soft:#c1beb6; --muted:#999991; --line:rgba(233,226,212,.12); } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:ui-serif,Georgia,"Noto Serif SC",serif; line-height:1.7; }
+    header, main, footer { width:min(760px,calc(100% - 40px)); margin:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; padding:28px 0 20px; border-bottom:1px solid var(--line); }
+    .brand { color:var(--coral); font:700 12px/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:.2em; text-decoration:none; }
+    .toggle { display:flex; gap:5px; padding:4px; border:1px solid var(--line); border-radius:999px; }
+    button { border:0; border-radius:999px; padding:7px 11px; color:var(--soft); background:transparent; font:600 11px/1 ui-sans-serif,system-ui,sans-serif; cursor:pointer; }
+    button.active { color:var(--paper); background:var(--ink); }
+    main { padding:48px 0 64px; }
+    h1 { margin:0 0 12px; font-size:clamp(40px,7vw,60px); line-height:1; font-weight:500; letter-spacing:-.025em; }
+    h2 { margin:36px 0 8px; font-size:23px; }
+    h3 { margin:22px 0 5px; font-size:16px; }
+    p, li { color:var(--soft); font-size:16px; }
+    a { color:var(--teal); }
+    .lede { max-width:640px; color:var(--soft); font-size:19px; }
+    .contact { display:inline-flex; align-items:center; gap:8px; margin:14px 0 10px; padding:12px 16px; border-radius:7px; background:var(--coral); color:white; text-decoration:none; font:650 13px/1 ui-sans-serif,system-ui,sans-serif; }
+    .divider { height:1px; background:var(--line); margin:30px 0; }
+    .faq { border-top:1px solid var(--line); }
+    .faq article { padding:16px 0; border-bottom:1px solid var(--line); }
+    .faq h3 { margin-top:0; color:var(--ink); }
+    .faq p { margin:0; }
+    [data-lang] { display:none; }
+    [data-lang].visible { display:block; }
+    footer { padding:24px 0 50px; border-top:1px solid var(--line); color:var(--muted); font:12px/1.7 ui-sans-serif,system-ui,sans-serif; }
+    .footer-links { display:flex; flex-wrap:wrap; gap:16px; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="starlune.html">STARLUNE</a>
+    <div class="toggle" aria-label="Language"><button id="enButton" class="active" type="button">EN</button><button id="zhButton" type="button">中文</button></div>
+  </header>
+  <main>
+    <section data-lang="en" class="visible">
+      <h1>How can we help?</h1>
+      <p class="lede">Starlune is designed to work without an account. If something feels unclear, broken, or inaccessible, email us and include your device model, iOS version, and a short description.</p>
+      <a class="contact" href="mailto:kaimen2026@163.com?subject=Starlune%20Support">Email Starlune support</a>
+      <p>kaimen2026@163.com · Usually answered within 2 business days.</p>
+      <div class="faq">
+        <h2>Frequently asked</h2>
+        <article><h3>Do I need an account?</h3><p>No. Your sign, settings, consent choice, and saved readings stay on your device.</p></article>
+        <article><h3>How does the Oracle handle my data?</h3><p>The app shows the exact fields, recipient, purpose, and processing location before sending anything. No AI request is made until you actively agree. You can withdraw consent at You &gt; AI data consent.</p></article>
+        <article><h3>How do I manage Starlune Plus?</h3><p>Open Settings on your device, tap your Apple Account, then Subscriptions. You can also use Restore Purchases on the Starlune paywall.</p></article>
+        <article><h3>How do I cancel a subscription?</h3><p>Subscriptions are managed by Apple. Cancel at least 24 hours before the current period ends to avoid the next renewal.</p></article>
+        <article><h3>Why does the Oracle say AI is not configured?</h3><p>That build cannot reach the AI gateway. Daily readings, the zodiac library, reminders, and relationship tools remain available offline.</p></article>
+        <article><h3>Is Starlune medical or financial advice?</h3><p>No. Starlune is a reflective astrology experience and does not provide medical, legal, financial, or mental-health advice.</p></article>
+        <article><h3>How do I delete saved readings?</h3><p>Open You &gt; Reading Library, swipe left on a reading, and choose Delete. Uninstalling the app also removes local app data.</p></article>
+      </div>
+    </section>
+    <section data-lang="zh">
+      <h1>有什么可以帮你？</h1>
+      <p class="lede">星澜无需账号即可使用。如果遇到不清楚、无法使用或无障碍问题，请发送邮件并附上设备型号、iOS 版本和简短描述。</p>
+      <a class="contact" href="mailto:kaimen2026@163.com?subject=Starlune%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">发送技术支持邮件</a>
+      <p>kaimen2026@163.com · 通常在 2 个工作日内回复。</p>
+      <div class="faq">
+        <h2>常见问题</h2>
+        <article><h3>需要注册账号吗？</h3><p>不需要。星座、设置、授权选择和收藏解读都保存在你的设备中。</p></article>
+        <article><h3>星语如何处理我的数据？</h3><p>发送前，应用会展示具体字段、接收方、用途与处理地区。只有你主动同意后才会发送 AI 请求。可在“我的 &gt; AI 数据授权”中撤回。</p></article>
+        <article><h3>如何管理 Starlune Plus？</h3><p>打开设备“设置”，进入 Apple 账户，再进入“订阅”。也可以在星澜订阅页使用“恢复购买”。</p></article>
+        <article><h3>如何取消订阅？</h3><p>订阅由 Apple 管理。请在当前周期结束前至少 24 小时取消，以避免下一次续期。</p></article>
+        <article><h3>为什么星语显示 AI 尚未配置？</h3><p>该构建暂时无法连接 AI 网关。每日解读、星座图鉴、提醒和关系工具仍可离线使用。</p></article>
+        <article><h3>星澜是否提供医疗或财务建议？</h3><p>不提供。星澜是反思式占星体验，不构成医疗、法律、财务或心理健康建议。</p></article>
+        <article><h3>如何删除收藏解读？</h3><p>进入“我的 &gt; 解读收藏”，向左滑动解读并选择删除。卸载应用也会移除本地应用数据。</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><div>Starlune · Daily zodiac, reframed.</div><div class="footer-links"><a href="starlune-privacy.html">Privacy Policy</a><a href="starlune.html">Starlune</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></div></footer>
+  <script>
+    const en=document.querySelector('[data-lang="en"]'),zh=document.querySelector('[data-lang="zh"]'),enButton=document.getElementById('enButton'),zhButton=document.getElementById('zhButton');
+    function show(lang){const chinese=lang==='zh';en.classList.toggle('visible',!chinese);zh.classList.toggle('visible',chinese);enButton.classList.toggle('active',!chinese);zhButton.classList.toggle('active',chinese);document.documentElement.lang=chinese?'zh-Hans':'en';}
+    enButton.addEventListener('click',()=>show('en'));zhButton.addEventListener('click',()=>show('zh'));
+    if((navigator.language||'').toLowerCase().startsWith('zh'))show('zh');
+  </script>
+</body>
+</html>
+
